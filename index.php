@@ -19,11 +19,11 @@
       <img src="assets/img/logosvgbranco.svg" width="160">
      
 
-      <form action=".php" method="POST" class="needs-validation" novalidate>
+      <form action="login.php" method="POST" class="needs-validation" novalidate>
         <div class="form">
           <div class="col-lg-15 mb-10">
             <label for="validationCustom01">Email</label>
-            <input type="email" class="form-control" id="email" name="email" placeholder="Email"required>
+            <input name='email' type="email" class="form-control" id="email" name="email" placeholder="Email"required>
             <div class="valid-feedback">
               Tudo certo!
             </div>
@@ -34,7 +34,7 @@
 
           <div class="col-lg-15 mb-10">
             <label for="validationCustom02">Senha</label>
-            <input type="password" class="form-control" id="validationCustom02" name="senha" placeholder="Senha" required>
+            <input name='senha' type="password" class="form-control" id="validationCustom02" name="senha" placeholder="Senha" required>
     
             <div class="invalid-feedback">
               Inserir Senha!

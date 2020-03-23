@@ -9,7 +9,7 @@ class UsuarioDao{
     function login($email, $senha) {
         $con = Conexao::getInstance();
         
-        $sql = 'SELECT Id, Nome, Flag FROM usuario WHERE email = "'.$email.'" AND senha = "'.$senha.'"';
+        $sql = 'SELECT * FROM usuario WHERE email = "'.$email.'" AND senha = "'.$senha.'"';
         $stmt = $con->prepare($sql);
        
         $stmt->execute();
